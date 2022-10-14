@@ -1,3 +1,12 @@
+:root {
+  --clr-red: #FF7373;
+  --clr-lightgrey: #f5f5f5;
+  --clr-grey: #BEBEBE;
+  --clr-darkgrey: #616365;
+  --clr-white: white;
+  --clr-black: #23262A;
+}
+
 * {
   margin: 0;
   padding: 0;
