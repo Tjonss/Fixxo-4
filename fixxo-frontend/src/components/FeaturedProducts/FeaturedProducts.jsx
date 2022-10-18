@@ -12,13 +12,7 @@ const FeaturedProducts = () => {
       <div className='d-md-none mb-4'>
         <Carousel />
       </div>
-
-      <div className="Featured-gallery">
-        <FeaturedGallery />
-      </div>
-
-      
-
+      <FeaturedGallery />
       <h3 className='text-center mb-4'>Featured Products</h3>
       <div className='container Featured-width text-center'>
         <div className="row">
@@ -28,7 +22,6 @@ const FeaturedProducts = () => {
           <SingleFeaturedProduct />       
           <SingleFeaturedProduct />       
           <SingleFeaturedProduct />       
-
         </div>
       </div>
 

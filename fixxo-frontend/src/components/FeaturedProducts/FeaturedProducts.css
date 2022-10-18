@@ -10,7 +10,13 @@
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  padding: .6em 1.6em;
+  border: none;
+}
+.Card-Button:hover {
+  background-color: var(--clr-red);
+  color: white;
+  transition: 200ms ease-in-out;
 }
 .Quick-view {
   position: absolute;
@@ -77,8 +83,3 @@
   background-color: #000;
   color: #fff;
 }
-.Featured-width {
-  max-width: 980px;
-}
-
-
