@@ -14,10 +14,10 @@ const FeaturedHover = () => {
           <i className="fa-regular fa-heart"></i>
         </div>
         <div className='Rounded'>
-          <i class="fa-solid fa-code-compare"></i>
+          <i className="fa-solid fa-code-compare"></i>
         </div>
         <div className='Rounded'>
-          <i class="fa-solid fa-bag-shopping"></i>
+          <i className="fa-solid fa-bag-shopping"></i>
         </div>
       </div>
 
