@@ -1,0 +1,68 @@
+.Featured-ratings i {
+  font-size: 13px;
+  margin-left: 5px;
+  padding: 0;
+  color:var(--clr-red);
+}
+.Quick-view {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: var(--clr-red);
+  transition-delay: 300ms;
+  cursor: pointer;
+}
+.Quick-view-topleft {
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.Quick-view-bottomright {
+  width: 25px;
+  height: 25px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.Quick-view-icons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  top: 10px; 
+  right: 15px;
+  color: white;
+}
+.Rounded {
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .7rem;
+  cursor: pointer;
+}
+.Rounded:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 250ms ease-in-out;
+}
+.Rounded:active {
+  background-color: #000;
+  color: #fff;
+}
