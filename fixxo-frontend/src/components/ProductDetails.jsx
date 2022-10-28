@@ -1,7 +1,7 @@
-/* import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from 'swiper';
 import "swiper/css";
-import "swiper/css/navigation"; */
+import "swiper/css/navigation";
 
 import '../App.css';
 
@@ -31,7 +31,7 @@ const ProductDetails = () => {
     </div>
 
     
-{/*     <Swiper
+    <Swiper
         slidesPerView={1}
         spaceBetween={10}
         slidesPerGroup={1}
@@ -73,7 +73,7 @@ const ProductDetails = () => {
         <SwiperSlide>Slide 7</SwiperSlide>
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper> */}
+      </Swiper>
     
   </>
   )
