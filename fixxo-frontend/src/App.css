@@ -62,3 +62,9 @@ body, html {
   height: 100%;
   object-fit: cover;
   }
+
+  .related-products {
+    border: solid 2px #a8a8a8;
+    border-radius: 1rem;
+    margin-top: 2rem;
+  }
