@@ -20,7 +20,6 @@ const FeaturedHover = () => {
           <i className="fa-solid fa-bag-shopping"></i>
         </div>
       </div>
-
     </div>
     </>
   )

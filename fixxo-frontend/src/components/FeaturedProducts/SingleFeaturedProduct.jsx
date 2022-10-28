@@ -29,6 +29,7 @@ const SingleFeaturedProduct = () => {
         <FeaturedProductsContent/>
       </div>
      
+    
     </>
   )
 }

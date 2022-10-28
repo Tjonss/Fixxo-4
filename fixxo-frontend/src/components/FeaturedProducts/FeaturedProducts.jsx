@@ -12,19 +12,21 @@ const FeaturedProducts = () => {
       <div className='d-md-none mb-4'>
         <Carousel />
       </div>
-      <FeaturedGallery />
-      <h3 className='text-center mb-4'>Featured Products</h3>
-      <div className='container Featured-width text-center'>
-        <div className="row">
-          <SingleFeaturedProduct />       
-          <SingleFeaturedProduct />       
-          <SingleFeaturedProduct />       
-          <SingleFeaturedProduct />       
-          <SingleFeaturedProduct />       
-          <SingleFeaturedProduct />       
+      <div className='container-xxl'>
+        <FeaturedGallery />
+        <h3 className='text-center mb-4'>Featured Products</h3>
+        <div className='container text-center row mx-auto'>
+          <div className="row mx-auto">
+            <SingleFeaturedProduct />       
+            <SingleFeaturedProduct />       
+            <SingleFeaturedProduct />       
+            <SingleFeaturedProduct />       
+            <SingleFeaturedProduct />       
+            <SingleFeaturedProduct />       
+            <SingleFeaturedProduct />       
+          </div>
         </div>
-      </div>
-
+      </div> 
     </>
   )
 }
