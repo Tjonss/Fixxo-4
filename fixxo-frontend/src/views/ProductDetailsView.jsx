@@ -14,12 +14,12 @@ const ProductDetailsView = () => {
 
     {/* -----------------------------------------  */}
        
-      <div className="row container-fluid w-100">
+      <div className="row justify-content-center container">
         
         
-          <div className="container row">
+          <div className="container col-6">
          {/* Stor bild / "Karusell" */}
-            <div className="col-sm-12 col-md-12 col-lg-4">
+            <div className="col-sm-12 col-md-12 col-lg-12">
                
                 <div className="col">
                   <img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png" alt="" />
@@ -48,9 +48,9 @@ const ProductDetailsView = () => {
 {/* ------------------------------------------------------- */}
 
 
-          <div className="container row">
+          <div className="container col-6">
               
-             <div className="col-sm-12 col-md-12 col-lg-4">
+             <div className="col-sm-12 col-md-12 col-lg-12">
               
               <div className="d-flex">                   
                   <div>
