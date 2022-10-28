@@ -1,0 +1,25 @@
+.support .row .card-group .card {
+  background-color: white;
+  align-items: center;
+}
+
+.icon {
+  width: 30%;
+}
+
+.insta {
+  /* background-color: #bebebe; */
+}
+
+.follow {
+  bottom: 360px;
+}
+
+.photo {
+  height: 250px;
+  object-fit: cover;
+}
+
+.follow2 {
+  bottom: 145px;
+}

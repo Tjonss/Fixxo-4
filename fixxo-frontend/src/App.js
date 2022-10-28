@@ -1,11 +1,16 @@
 import './App.css';
 import Footer from './components/Footer/Footer';
+import FeaturedInstagram from './components/FeaturedInstagram/FeaturedInstagram';
+import FeaturedProducts from './components/FeaturedProducts/FeaturedProducts';
 
 function App() {
   return (
     <div className="App">
-      
-    <Footer />
+      <FeaturedProducts />
+      <FeaturedInstagram />
+      <Footer />
+
+
     </div>
   );
 }
