@@ -55,7 +55,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  top: 10px; 
+  top: 15px; 
   right: 15px;
   color: white;
 }
@@ -65,14 +65,14 @@
   border-radius: 50%;
   width: 25px;
   height: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   margin-bottom: .7rem;
   cursor: pointer;
 }
 .Rounded i {
-  font-size: .8rem;
+  font-size: .9rem;
 }
 .Rounded:hover {
   background-color: #000;

@@ -28,8 +28,6 @@ const SingleFeaturedProduct = () => {
         </div>
         <FeaturedProductsContent/>
       </div>
-     
-    
     </>
   )
 }

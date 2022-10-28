@@ -3,7 +3,7 @@ import React from 'react'
 const FeaturedHover = () => {
   return (
     <>
-    <div className='d-none d-md-block'>
+    <div className='d-none d-xl-block'>
       <div className='Featured-hover Quick-view'>
         <small>Quick view</small>
         <div className='Quick-view-topleft'></div>
