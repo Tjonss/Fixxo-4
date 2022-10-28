@@ -15,3 +15,22 @@
 body, html {
   font-family: 'Poppins', sans-serif;
 }
+
+/* ------------------  */
+
+.ProductDetailsView img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-red {
+  color:var(--clr-red);
+}
+
+.bg-red {
+  background-color: var(--clr-red);
+}
+
+.bg-lgrey {
+  background-color: var(--clr-lightgrey);
+}

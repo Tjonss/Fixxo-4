@@ -1,11 +1,11 @@
 import './App.css';
 
+import ProductDetailsView from './views/ProductDetailsView';
+
+
 function App() {
   return (
-    <div className="App">
-      
-
-    </div>
+    <ProductDetailsView/>
   );
 }
 
