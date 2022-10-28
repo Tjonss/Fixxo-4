@@ -1,11 +1,15 @@
 import './App.css';
 
 import ProductDetailsView from './views/ProductDetailsView';
+import ProductDetails from './components/ProductDetails';
 
 
 function App() {
   return (
-    <ProductDetailsView/>
+    <>
+      <ProductDetailsView/>
+      <ProductDetails/>
+    </>
   );
 }
 

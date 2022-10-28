@@ -80,6 +80,50 @@ const ProductDetailsView = () => {
                       </div>   
                     </div>
 
+                    <Swiper
+        slidesPerView={1}
+        spaceBetween={10}
+        slidesPerGroup={1}
+        loop={true}
+        loopFillGroupWithBlank={true}
+        nagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Navigation]}
+        className="mySwiper"
+        breakpoints={{
+          320: {
+            slidesPerView: 1
+          },
+          480: {
+            slidesPerView: 2
+          },
+          640: {
+            slidesPerView: 3
+          },
+          768: {
+            slidesPerView: 4
+          },
+          1024: {
+            slidesPerView: 5
+          },
+          1820: {
+            slidesPerView: 6
+          },
+        }}
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
+
                 <div className="pdv-social d-flex mt-4 mb-4">
                   <p className="pdv-exp-text">Share:</p>
                   <div className="pdv-socialbox pdv-btn-grp">
