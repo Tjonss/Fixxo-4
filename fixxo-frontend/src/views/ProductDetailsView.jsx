@@ -1,9 +1,51 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from 'swiper';
-import "swiper/css";
-import "swiper/css/navigation";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 import '../App.css';
+
+
+
+/* -------------------------- database / Ehsan ---------------------------*/
+const data = [
+  {
+    id : 1,
+    productName: 'Product 1',
+    price: '100'
+  },
+  {
+    id : 2,
+    productName: 'Product 2',
+    price: '200'
+  },
+  {
+    id : 3,
+    productName: 'Product 3',
+    price: '300'
+  },
+  {
+    id : 4,
+    productName: 'Product 4',
+    price: '400'
+  },
+  {
+    id : 5,
+    productName: 'Product 5',
+    price: '500'
+  },
+  {
+    id : 6,
+    productName: 'Product 6',
+    price: '600'
+  }
+];
+
+
+
 
 const ProductDetailsView = () => {
   return (
@@ -148,7 +190,7 @@ const ProductDetailsView = () => {
                 
           </div>
 
-              
+{/* -------------------------------- ehsan --------------------------- */}
           <br /><br /><br />
             <div>
               <nav>
@@ -167,54 +209,42 @@ const ProductDetailsView = () => {
               </div>
             </div><br /><br />
 
-            <div className="related-products">
-              <br />
-              <h2>Related Products</h2>
-              <br />
+            <div className='swiper-container'>
+              <h1>Related Products</h1>
               <Swiper
-                  slidesPerView={1}
-                  spaceBetween={10}
-                  slidesPerGroup={1}
-                  loop={true}
-                  loopFillGroupWithBlank={true}
-                  nagination={{
-                    clickable: true,
-                  }}
-                  navigation={true}
-                  modules={[Navigation]}
-                  className="mySwiper"
-                  breakpoints={{
-                    320: {
-                      slidesPerView: 1
-                    },
-                    480: {
-                      slidesPerView: 2
-                    },
-                    640: {
-                      slidesPerView: 3
-                    },
-                    768: {
-                      slidesPerView: 4
-                    },
-                    1024: {
-                      slidesPerView: 5
-                    },
-                    1820: {
-                      slidesPerView: 6
-                    },
-                  }}
-                >
-                  <SwiperSlide>Slide 1</SwiperSlide>
-                  <SwiperSlide>Slide 2</SwiperSlide>
-                  <SwiperSlide>Slide 3</SwiperSlide>
-                  <SwiperSlide>Slide 4</SwiperSlide>
-                  <SwiperSlide>Slide 5</SwiperSlide>
-                  <SwiperSlide>Slide 6</SwiperSlide>
-                  <SwiperSlide>Slide 7</SwiperSlide>
-                  <SwiperSlide>Slide 8</SwiperSlide>
-                  <SwiperSlide>Slide 9</SwiperSlide>
-                </Swiper>
-                <br /><br />
+                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                spaceBetween={25}
+                slidesPerView={1}
+                navigation
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
+                // onSlideChange={() => console.log('slide change')}
+                // onSwiper={(swiper) => console.log(swiper)}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 1
+                  },
+                  768: {
+                    slidesPerView: 2
+                  },
+                  1024: {
+                    slidesPerView: 4
+                  },
+                }}
+              >
+                {data.map ( product => (
+                  <SwiperSlide key={product.id} className='slide'>
+                    <div className='slide-content'>
+                      <div className='product-image'>
+                        <img src="/Grupp4Image.jpg" alt="" className='product-photo'/>
+                        <h5>{product.productName}</h5>
+                        <p className='price-tag'>PRICE: {product.price}</p>
+                      </div>
+                      
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
 
       </div>

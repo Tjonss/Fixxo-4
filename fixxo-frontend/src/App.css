@@ -36,35 +36,43 @@ body, html {
 }
 
 
-.swiper-slide {
+  /* ------------------ ehsan ---------------------- */
+.swiper-container {
   text-align: center;
-  font-size: 18px;
-  background: #fff;
-  
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  }
-  
-  .swiper-slide img {
-  display: block;
+  background-color: #f2f2f2;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  }
+  padding: 1rem;
+}
 
-  .related-products {
-    border: solid 2px #a8a8a8;
-    border-radius: 1rem;
-    margin-top: 2rem;
-  }
+.slide {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-content {
+  background-color: rgb(241, 241, 241);
+  width: auto;
+  height: 300px;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 10px 40px 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.952);
+}
+
+.product-photo {
+
+  width: 300px;
+  border-radius: 10px 10px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.166);
+}
