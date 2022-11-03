@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './navbar.css';
 
 const Navbar = () => {
@@ -7,7 +8,7 @@ const Navbar = () => {
     <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-white">
     
     <div className="container-fluid">
-        <h4 className='navbar-logo'>Fixxo.</h4>
+        <Link to='/' className='navbarlogo'><h4 className='navbar-logo'>Fixxo.</h4></Link>
         <button className="navbar-toggler" >
         <i className="fas fa-bars"></i>
         </button>
@@ -17,7 +18,7 @@ const Navbar = () => {
         
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item toplinks">
-            <a className="nav-link me-2" aria-current="page" href="#">Home</a>
+            <Link to='/' className="nav-link me-2" aria-current="page" >Home</Link>
             </li>
             
             <li className="nav-item dropdown toplinks">
@@ -27,7 +28,7 @@ const Navbar = () => {
             
             </li>
             <li className="nav-item toplinks">
-            <a className="nav-link" href="#">Products</a>
+            <Link to='/products' className="nav-link" href="#">Products</Link>
             </li>
             <li className="nav-item toplinks">
             <a className="nav-link" href="#">Pages</a>

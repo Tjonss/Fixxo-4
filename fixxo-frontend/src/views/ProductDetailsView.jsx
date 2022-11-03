@@ -7,7 +7,7 @@ import '../App.css';
 
 const ProductDetailsView = () => {
   return (
-    <section className="ProductDetailsView">
+    <section className="ProductDetailsView container">
 
         <div className="container text-danger w-100 text-center d-none d-md-block d-lg-block">
           <p>Get 25% OFF at the Fixxo Selection - Shop Now!</p>

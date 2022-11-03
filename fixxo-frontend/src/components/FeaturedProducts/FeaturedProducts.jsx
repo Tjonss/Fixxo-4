@@ -14,7 +14,7 @@ const FeaturedProducts = () => {
       <div className='container-xxl'>
         <FeaturedGallery />
         <h3 className='text-center mb-4'>Featured Products</h3>
-        <div className='container text-center row mx-auto'>
+        <div className='container text-center row mx-auto mb-5'>
           <div className="row">
             
               <SingleFeaturedProduct />       
