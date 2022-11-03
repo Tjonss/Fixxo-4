@@ -3,7 +3,9 @@
     font-weight: bold;
     padding-right: 3rem;
   }
-
+.navbarlogo {
+  text-decoration: none;
+}
 .navbar a {
     font-size: 16px;
     font-weight: 500;
@@ -22,3 +24,4 @@
 .redpill {
     background-color: #FF7373;
 }
+
