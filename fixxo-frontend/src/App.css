@@ -51,6 +51,7 @@ body, html {
   align-items: center;
 }
 
+
 .slide-content {
   background-color: rgb(241, 241, 241);
   width: auto;
@@ -76,3 +77,11 @@ body, html {
   align-items: center;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.166);
 }
+
+  .related-products {
+    border: solid 2px #a8a8a8;
+    border-radius: 1rem;
+    margin-top: 2rem;
+  }
+
+

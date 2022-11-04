@@ -49,14 +49,14 @@ const data = [
 
 const ProductDetailsView = () => {
   return (
-    <body className="ProductDetailsView">
+    <section className="ProductDetailsView container">
 
         <div className="container text-danger w-100 text-center d-none d-md-block d-lg-block">
           <p>Get 25% OFF at the Fixxo Selection - Shop Now!</p>
         </div>
      
           <div className="d-none d-md-block d-lg-block d-flex w-100 m-4">
-            <p><i class="fa-solid fa-house"></i> Home <i class="fa-solid fa-chevron-right"></i> Product Signal </p>
+            <p><i className="fa-solid fa-house"></i> Home <i className="fa-solid fa-chevron-right"></i> Product Signal </p>
           </div>
 
     {/* -----------------------------------------  */}
@@ -110,7 +110,7 @@ const ProductDetailsView = () => {
               </div>
                
                 <div className="text-red mt-1 mb-2">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
                 </div>
 
                 <div className="col">
@@ -137,7 +137,7 @@ const ProductDetailsView = () => {
                   <p className="">
                     Color:
                   </p>
-                  <button className="ms-4 btn border-dark rounded-0">Choose an Option <i class="ms-2 fa-solid fa-chevron-down"></i></button>
+                  <button className="ms-4 btn border-dark rounded-0">Choose an Option <i className="ms-2 fa-solid fa-chevron-down"></i></button>
                     
                 </div>
 
@@ -146,13 +146,13 @@ const ProductDetailsView = () => {
                       <div className="d-flex">                    
                           <div className="d-flex ms-4">
                               <button className="btn btn border-dark rounded-0">
-                                <i class="fa-solid fa-minus"></i>
+                                <i className="fa-solid fa-minus"></i>
                               </button> 
                                   <div className="ps-4 pe-4 border-dark border-top border-bottom">
                                     <p className="position-absolute mt-2">1</p>
                                   </div>
                               <button className="btn border-dark rounded-0">
-                                <i class="fa-solid fa-plus"></i>
+                                <i className="fa-solid fa-plus"></i>
                               </button>
                           </div>
 
@@ -165,23 +165,23 @@ const ProductDetailsView = () => {
                   <div className="">
 
                     <button className="btn rounded-circle bg-lgrey">
-                      <i class="fa-brands fa-facebook-f"></i>
+                      <i className="fa-brands fa-facebook-f"></i>
                     </button>
 
                     <button className="btn rounded-circle bg-lgrey">
-                      <i class="fa-brands fa-instagram"></i>
+                      <i className="fa-brands fa-instagram"></i>
                     </button>
 
                     <button className="btn rounded-circle bg-lgrey">
-                      <i class="fa-brands fa-twitter"></i>
+                      <i className="fa-brands fa-twitter"></i>
                     </button>
 
                     <button className="btn rounded-circle bg-lgrey">
-                      <i class="fa-brands fa-google"></i>
+                      <i className="fa-brands fa-google"></i>
                     </button>
 
                     <button className="btn rounded-circle bg-lgrey">
-                      <i class="fa-brands fa-linkedin"></i>
+                      <i className="fa-brands fa-linkedin"></i>
                     </button>   
 
                   </div>
@@ -248,7 +248,7 @@ const ProductDetailsView = () => {
             </div>
 
       </div>
-    </body>
+    </section>
   )
 }
 

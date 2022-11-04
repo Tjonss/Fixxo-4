@@ -1,0 +1,51 @@
+.showroom {
+    height: 700px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showroom-div {
+    display: block;
+    max-width: 40em;
+    position: absolute;
+}
+
+.showroom-div h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.showroom-div h2 {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.showroom-div p {
+    font-size: 13px;
+}
+
+.showroom button {
+    border-style: none;
+    padding: .6rem 2rem;
+    background-color: #FF7373;
+    font-size: 11px;
+    font-weight: 500;
+    color: white;
+}
+
+.showroom button:hover {
+    background-color: #984545;
+    transition-duration: 0.3s;
+}
+
+.showroom-divdiv {
+    /* position: absolute; */
+}
+
+.showroom-img {
+    max-height: 700px;
+    padding-top: 1rem;
+    /* position: absolute; */
+}

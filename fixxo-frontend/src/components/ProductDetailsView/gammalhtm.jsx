@@ -8,7 +8,7 @@ const ProductDetailsView = () => {
         </div>
      
           <div className="container pdv-bread d-flex w-100 m-4">
-            <p><i class="fa-solid fa-house"></i> Home <i class="fa-solid fa-chevron-right"></i> Product Signal </p>
+            <p><i className="fa-solid fa-house"></i> Home <i className="fa-solid fa-chevron-right"></i> Product Signal </p>
           </div>
      
         <div className="col-md row-sm pdv-big-container container d-flex">
@@ -36,7 +36,7 @@ const ProductDetailsView = () => {
                 </div>
                 
                 <div className="pdv-rating d-flex">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
                 </div>
 
                 <div className="pdv-price">
@@ -63,7 +63,7 @@ const ProductDetailsView = () => {
                   <p className="pdv-exp-text">
                     Color:
                   </p>
-                  {/* <button className="btn pdv-btn dropdown pdv-btn-grp">Choose an Option <i class="fa-solid fa-chevron-down"></i></button> */}
+                  {/* <button className="btn pdv-btn dropdown pdv-btn-grp">Choose an Option <i className="fa-solid fa-chevron-down"></i></button> */}
                     
                 </div>
 
@@ -71,9 +71,9 @@ const ProductDetailsView = () => {
                         <p className="pdv-exp-text">Qty:</p>
                       <div className="pdv-grejer d-flex">                    
                           <div className="pdv-toggler d-flex">
-                              <button className="btn pdv-btn toggler-minus"><i class="fa-solid fa-minus"></i></button> 
+                              <button className="btn pdv-btn toggler-minus"><i className="fa-solid fa-minus"></i></button> 
                               <div className="pdv-counterbox"> <p className="toggler-qty-counter">1</p> </div>
-                              <button className="btn pdv-btn toggler-plus"><i class="fa-solid fa-plus"></i></button>
+                              <button className="btn pdv-btn toggler-plus"><i className="fa-solid fa-plus"></i></button>
                           </div>
 
                             <button className="btn pdv-cart-btn"> ADD TO CART </button>
@@ -127,11 +127,11 @@ const ProductDetailsView = () => {
                 <div className="pdv-social d-flex mt-4 mb-4">
                   <p className="pdv-exp-text">Share:</p>
                   <div className="pdv-socialbox pdv-btn-grp">
-                    <button className="btn pdv-social-btn"><i class="fa-brands fa-facebook-f"></i></button>
-                    <button className="btn pdv-social-btn"><i class="fa-brands fa-instagram"></i></button>
-                    <button className="btn pdv-social-btn"><i class="fa-brands fa-twitter"></i></button>
-                    <button className="btn pdv-social-btn"><i class="fa-brands fa-google"></i></button>
-                    <button className="btn pdv-social-btn"><i class="fa-brands fa-linkedin"></i></button>                    
+                    <button className="btn pdv-social-btn"><i className="fa-brands fa-facebook-f"></i></button>
+                    <button className="btn pdv-social-btn"><i className="fa-brands fa-instagram"></i></button>
+                    <button className="btn pdv-social-btn"><i className="fa-brands fa-twitter"></i></button>
+                    <button className="btn pdv-social-btn"><i className="fa-brands fa-google"></i></button>
+                    <button className="btn pdv-social-btn"><i className="fa-brands fa-linkedin"></i></button>                    
                   </div>
                 </div>    
                
