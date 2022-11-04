@@ -54,8 +54,6 @@ body, html {
 
 .slide-content {
   background-color: rgb(241, 241, 241);
-  width: auto;
-  height: 300px;
   margin: auto;
   border-radius: 10px;
   display: flex;
