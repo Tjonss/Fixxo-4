@@ -1,7 +1,16 @@
 import React from 'react'
+import { useEffect } from 'react'
+import { useContext } from 'react'
 import SingleFeaturedProduct from '../components/FeaturedProducts/SingleFeaturedProduct'
+import { ProductsContext } from '../contexts/ProductsContext'
 
 const ProductsView = () => {
+
+  const { products, getProducts } = useContext(ProductsContext)
+
+  useEffect(() => {
+    getProducts()
+  }, [])
   return (
     <>
       <div className="container mt-5 ">
@@ -68,18 +77,7 @@ const ProductsView = () => {
           </div>
           <div className="col-12 col-md-9">
             <div className="row text-center gy-2">
-              <SingleFeaturedProduct/>
-              <SingleFeaturedProduct/>
-              <SingleFeaturedProduct/>
-              <SingleFeaturedProduct/>
-              <SingleFeaturedProduct/>
-              <SingleFeaturedProduct/>
-              <SingleFeaturedProduct/>
-              <SingleFeaturedProduct/>
-              <SingleFeaturedProduct/>
-              <SingleFeaturedProduct/>
-              <SingleFeaturedProduct/>
-              <SingleFeaturedProduct/>
+              {products && products.map(product => <SingleFeaturedProduct key={product.name} product={product} />)}
             </div>
           </div>
           </div>
