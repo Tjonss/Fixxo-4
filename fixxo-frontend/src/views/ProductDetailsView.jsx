@@ -56,7 +56,7 @@ const ProductDetailsView = () => {
 
   useEffect(() => {
     getSingleProduct(id);
-  }, [getSingleProduct, id, dispatch]);
+  }, [id, dispatch]);
 
   return (
     <section className='ProductDetailsView container'>

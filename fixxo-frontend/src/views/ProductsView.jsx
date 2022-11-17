@@ -10,7 +10,7 @@ const ProductsView = () => {
 
   useEffect(() => {
     getProducts()
-  }, [getProducts])
+  }, [])
 
   return (
     <>
