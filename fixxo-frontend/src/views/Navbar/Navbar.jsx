@@ -1,9 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './navbar.css';
+// import { useSelector } from 'react-redux';
+// import ShoppingCart from '../ShoppingCart/ShoppingCart';
 
 const Navbar = () => {
 
+    // const totalQuantity = useSelector(state => state.cartReducer.totalQuantity)
+    
   return (
 
     <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-white">
@@ -23,19 +27,19 @@ const Navbar = () => {
             </li>
             
             <li className="nav-item dropdown toplinks">
-            <a className="nav-link me-2" aria-current="page" href="#">
+            <a className="nav-link me-2" aria-current="page">
                 Categories
             </a>
             
             </li>
             <li className="nav-item toplinks">
-            <Link to='/products' className="nav-link" href="#">Products</Link>
+            <Link to='/products' className="nav-link">Products</Link>
             </li>
             <li className="nav-item toplinks">
-            <a className="nav-link" href="#">Pages</a>
+            <a className="nav-link">Pages</a>
             </li>
             <li className="nav-item toplinks">
-            <a className="nav-link" href="#">Blog</a>
+            <a className="nav-link">Blog</a>
             </li>
             {/* <li className="nav-item">
             <a className="nav-link disabled"
@@ -44,12 +48,11 @@ const Navbar = () => {
             </li> */}
         </ul>
         </div>
+    
         
-        <a className="nav-link me-3 redhover" href="#">Login</a>
-        
-        <a className="nav-link me-3 redhover" href="#">
-           My Cart / $23.00
-        </a>
+        <NavLink to='/cart' className="nav-link me-3 redhover">
+           My Cart / $0.00
+        </NavLink>
         
 
         <div className="dropdown">
@@ -67,9 +70,11 @@ const Navbar = () => {
             role="button"
             >
             <i className="fas fa-shopping-bag"></i>
-            <span className="badge rounded-pill badge-notification redpill">1</span>
+            <span className="badge rounded-pill badge-notification redpill">0</span>
             </a>
+            {/* <ShoppingCart/> */}
 
+            <a className="nav-link me-3 redhover">Login</a>
     {/* </div> */}
     </div> 
     </nav>
