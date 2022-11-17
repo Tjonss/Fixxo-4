@@ -15,3 +15,71 @@
 body, html {
   font-family: 'Poppins', sans-serif;
 }
+
+/* ------------------  */
+
+.ProductDetailsView img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-red {
+  color:var(--clr-red);
+}
+
+.bg-red {
+  background-color: var(--clr-red);
+}
+
+.bg-lgrey {
+  background-color: var(--clr-lightgrey);
+}
+
+
+  /* ------------------ ehsan ---------------------- */
+.swiper-container {
+  text-align: center;
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 1rem;
+}
+
+.slide {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.slide-content {
+  background-color: rgb(241, 241, 241);
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 10px 40px 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.952);
+}
+
+.product-photo {
+
+  width: 300px;
+  border-radius: 10px 10px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.166);
+}
+
+  .related-products {
+    border: solid 2px #a8a8a8;
+    border-radius: 1rem;
+    margin-top: 2rem;
+  }
+
+

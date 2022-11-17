@@ -1,0 +1,27 @@
+.navbar-logo {
+    font-size: 35px;
+    font-weight: bold;
+    padding-right: 3rem;
+  }
+.navbarlogo {
+  text-decoration: none;
+}
+.navbar a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #222529;
+    padding-right: 0.5rem;
+}
+
+.toplinks:hover a {
+    color: #FF7373;
+  }
+
+.redhover:hover {
+    color: #FF7373;
+}
+
+.redpill {
+    background-color: #FF7373;
+}
+
