@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './navbar.css';
 
 const Navbar = () => {
+
   return (
 
     <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-white">
