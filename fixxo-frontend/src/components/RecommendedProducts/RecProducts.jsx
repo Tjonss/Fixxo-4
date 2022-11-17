@@ -1,7 +1,7 @@
 import React from 'react'
 import RecProductsGallery from './RecProductsGallery'
 import './RecProducts.css'
-import LatestProduct from './RecLatestProducts/LatestProduct'
+import LatestProduct from './LatestProduct'
 
 const RecProducts = () => {
    return (
