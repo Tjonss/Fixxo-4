@@ -11,7 +11,7 @@ import { useContext, useEffect } from "react";
 import { ProductsContext } from "../contexts/ProductsContext";
 
 import { useParams } from "react-router-dom";
-import axios from "axios";
+import CartContext from '../contexts/CartContext';
 
 /* -------------------------- database / Ehsan ---------------------------*/
 const data = [
@@ -48,13 +48,15 @@ const data = [
 ];
 
 const ProductDetailsView = () => {
+
   const { product, getSingleProduct } = useContext(ProductsContext);
+  const { increment, decrement, dispatch } = useContext(CartContext);
 
   const { id } = useParams();
 
   useEffect(() => {
     getSingleProduct(id);
-  }, []);
+  }, [getSingleProduct, id, dispatch]);
 
   return (
     <section className='ProductDetailsView container'>
@@ -162,13 +164,13 @@ const ProductDetailsView = () => {
               <p className=''>Qty:</p>
               <div className='d-flex'>
                 <div className='d-flex ms-4'>
-                  <button className='btn btn border-dark rounded-0'>
+                  <button onClick={decrement} className='btn btn border-dark rounded-0'>
                     <i className='fa-solid fa-minus'></i>
                   </button>
                   <div className='ps-4 pe-4 border-dark border-top border-bottom'>
                     <p className='position-absolute mt-2'>1</p>
                   </div>
-                  <button className='btn border-dark rounded-0'>
+                  <button onClick={increment} className='btn border-dark rounded-0'>
                     <i className='fa-solid fa-plus'></i>
                   </button>
                 </div>

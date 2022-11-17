@@ -14,12 +14,9 @@ const SingleFeaturedProduct = ({ product }) => {
     setIsHovering(false)
   }
 
-  const varformastejagkollaomdetfinnsenprodukt = () => {
-    // varför måste jag kolla om det finns en produkt för att klicka på navbarlänken till produkten?
-  }
   return (
     <>
-    {product && (   
+    { product && (   
       <div className='col-6 col-md-4'>
         <Link to={`/products/${product.id}`} className="position-relative" 
               onMouseOver={handleMouseOver} 
@@ -28,7 +25,7 @@ const SingleFeaturedProduct = ({ product }) => {
         </Link>
         <FeaturedProductsContent product={product}/>
       </div>
-       )}
+       ) }
     </>
   )
 }

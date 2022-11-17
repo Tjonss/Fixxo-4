@@ -10,7 +10,8 @@ const ProductsView = () => {
 
   useEffect(() => {
     getProducts()
-  }, [])
+  }, [getProducts])
+
   return (
     <>
       <div className="container mt-5 ">
